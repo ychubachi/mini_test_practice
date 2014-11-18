@@ -8,4 +8,8 @@ class TestMiniTestPractice < MiniTest::Unit::TestCase
   def test_that_it_has_a_version_number
     refute_nil ::MiniTestPractice::VERSION
   end
+
+  def test_odd?
+    assert_equal true, @my_class.odd?(1)
+  end
 end
