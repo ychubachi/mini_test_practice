@@ -1,11 +1,11 @@
 require 'minitest_helper'
 
 class TestMiniTestPractice < MiniTest::Unit::TestCase
-  def test_that_it_has_a_version_number
-    refute_nil ::MiniTestPractice::VERSION
+  def setup
+    @my_class = MiniTestPractice::MyClass.new
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_that_it_has_a_version_number
+    refute_nil ::MiniTestPractice::VERSION
   end
 end
