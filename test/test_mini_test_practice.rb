@@ -10,6 +10,7 @@ class TestMiniTestPractice < MiniTest::Unit::TestCase
   end
 
   def test_odd?
+    assert_equal false, @my_class.odd?(0)
     assert_equal true,  @my_class.odd?(1)
     assert_equal false, @my_class.odd?(2)
     assert_equal true,  @my_class.odd?(3)
